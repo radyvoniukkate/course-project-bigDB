@@ -1,0 +1,82 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>CourseAnalysisServices</Database>
+    <Server>DESKTOP-F3LPS76\NEWSERVER</Server>
+    <ConnectionString>Data Source=DESKTOP-F3LPS76\NEWSERVER;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>Default</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>Wk5cyZNmTlyXDMS2/z/RYsstl7w=09.12.2024 20:32:5409.12.2024 20:11:14</TimeStamp>
+        <ID>
+          <String>Accounting DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>PdyOp/qaaJZy4fYFWCSb9TqPypc=09.12.2024 20:15:2609.12.2024 20:12:21</TimeStamp>
+        <ID>
+          <String>Accounting DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>HxY99GBITOYihj4nf6WIb49nNm4=09.12.2024 20:26:4709.12.2024 20:15:26</TimeStamp>
+        <ID>
+          <String>Dim Date</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>hFleGk1njHH+6WOdX6SaeBNHSRY=09.12.2024 20:26:4709.12.2024 20:16:50</TimeStamp>
+        <ID>
+          <String>Dim Employee</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>f/NnFFUqQcAXv9AVtC+McNGgyFs=09.12.2024 20:26:4709.12.2024 20:16:50</TimeStamp>
+        <ID>
+          <String>Dim Department</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>EsojlZ7pvpqfgV76fJDHbyA4deY=09.12.2024 20:26:4709.12.2024 20:16:50</TimeStamp>
+        <ID>
+          <String>Dim Position</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>F/EuydwR7yfK/t+bkWA0ISKXdTU=09.12.2024 23:19:5109.12.2024 20:16:50gT50eSf6rKq1Uyc8364GNc1EVC4=09.12.2024 20:58:1709.12.2024 20:16:50</TimeStamp>
+        <ID>
+          <String>Accounting DW</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>H7JF4dd+Td45lkwjZfPDAlmLNME=09.12.2024 20:05:5409.12.2024 20:05:54</TimeStamp>
+      <ID>
+        <String>CourseAnalysisServices</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2024-12-09T21:19:52.606667Z</LastDeployed>
+</DeploymentSnapshot>

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="DESKTOP-21RFT4C_KHSQL.PersonnelAccountingDW"
+  DTS:DTSID="{806CA8E5-D4D7-4195-AD34-C51748952B89}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=DESKTOP-21RFT4C\KHSQL;Initial Catalog=PersonnelAccountingDW;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Accounting Integration Services Project-{806CA8E5-D4D7-4195-AD34-C51748952B89}DESKTOP-21RFT4C\KHSQL.PersonnelAccountingDW;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

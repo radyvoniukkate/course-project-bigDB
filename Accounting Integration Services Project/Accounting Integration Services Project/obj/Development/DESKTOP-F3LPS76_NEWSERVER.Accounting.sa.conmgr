@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="DESKTOP-F3LPS76_NEWSERVER.Accounting.sa"
+  DTS:DTSID="{E420E519-235E-4778-8470-C9500557F4F4}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=DESKTOP-F3LPS76\NEWSERVER;User ID=sa;Initial Catalog=Accounting;Provider=SQLOLEDB.1;Auto Translate=False;Application Name=SSIS-Accounting Integration Services Project-{E420E519-235E-4778-8470-C9500557F4F4}DESKTOP-F3LPS76\NEWSERVER.Accounting.sa;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAqfX/ox4xtE6l/OCAQCFDugAAAAACAAAAAAAQZgAAAAEAACAAAAAD3qF8SYUvwueqj+R+vTj69mVH01iU69RLo8X9YSDQ8gAAAAAOgAAAAAIAACAAAAA+3mXQIQpmNaCwOiYJUM9Avd3XeNvQuqpnVrQsUx+lDXAAAADo7EoT24S9RJWmqF/uK18PoFLmxwdUVMntfIGArjL30pnqyewrBQg2kXRU+ApACft95RkUCkf/M11TAfJ8vy80TFa7AwN6r+yhdmtKLJpC0+uF+hqsoTK1WaTnPqFuokLw2XYrvI/ye5U7ULFJVAkbQAAAAKvIoToWYU9geO9wKpBi0ywnFvZdWlhYjisuJr5WTZPUq96EVhJTJaLfAjItcw5gM23SPlUoMgnmFtANEb+/YLA=</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

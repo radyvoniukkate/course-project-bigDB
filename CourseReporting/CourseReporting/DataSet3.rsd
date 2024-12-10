@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet3">
+    <Query>
+      <DataSourceReference>DataSource1</DataSourceReference>
+      <CommandText>EVALUATE SUMMARIZECOLUMNS('Dim Employee'[Employee Id], 'Dim Employee'[Full Name], 'Dim Position'[Position Id], 'Dim Position'[Name], FILTER(VALUES('Dim Employee'[Employee Id]), ('Dim Employee'[Employee Id] = VALUE("2400003")) || ('Dim Employee'[Employee Id] = VALUE("2400004")) || ('Dim Employee'[Employee Id] = VALUE("2400005")) || ('Dim Employee'[Employee Id] = VALUE("2400006")) || ('Dim Employee'[Employee Id] = VALUE("2400007")) || ('Dim Employee'[Employee Id] = VALUE("2400008")) || ('Dim Employee'[Employee Id] = VALUE("2400009")) || ('Dim Employee'[Employee Id] = VALUE("2400010")) || ('Dim Employee'[Employee Id] = VALUE("2400011")) || ('Dim Employee'[Employee Id] = VALUE("2400012")) || ('Dim Employee'[Employee Id] = VALUE("2400001")) || ('Dim Employee'[Employee Id] = VALUE("2400002")) || ('Dim Employee'[Employee Id] = VALUE("2400013")) || ('Dim Employee'[Employee Id] = VALUE("2400014")) || ('Dim Employee'[Employee Id] = VALUE("2400015")) || ('Dim Employee'[Employee Id] = VALUE("2400016")) || ('Dim Employee'[Employee Id] = VALUE("2400017")) || ('Dim Employee'[Employee Id] = VALUE("2400018")) || ('Dim Employee'[Employee Id] = VALUE("2400019")) || ('Dim Employee'[Employee Id] = VALUE("2400020")) || ('Dim Employee'[Employee Id] = VALUE("2400021")) || ('Dim Employee'[Employee Id] = VALUE("2400022")) || ('Dim Employee'[Employee Id] = VALUE("2400023")) || ('Dim Employee'[Employee Id] = VALUE("2400024")) || ('Dim Employee'[Employee Id] = VALUE("2400025")) || ('Dim Employee'[Employee Id] = VALUE("2400026")) || ('Dim Employee'[Employee Id] = VALUE("2400027")) || ('Dim Employee'[Employee Id] = VALUE("2400028")) || ('Dim Employee'[Employee Id] = VALUE("2400029")) || ('Dim Employee'[Employee Id] = VALUE("2400030")) || ('Dim Employee'[Employee Id] = VALUE("2400031")) || ('Dim Employee'[Employee Id] = VALUE("2400032")) || ('Dim Employee'[Employee Id] = VALUE("2400033")) || ('Dim Employee'[Employee Id] = VALUE("2400034")) || ('Dim Employee'[Employee Id] = VALUE("2400035")) || ('Dim Employee'[Employee Id] = VALUE("2400036")) || ('Dim Employee'[Employee Id] = VALUE("2400037")) || ('Dim Employee'[Employee Id] = VALUE("2400038")) || ('Dim Employee'[Employee Id] = VALUE("2400039")) || ('Dim Employee'[Employee Id] = VALUE("2400040")) || ('Dim Employee'[Employee Id] = VALUE("2400041")) || ('Dim Employee'[Employee Id] = VALUE("2400042")) || ('Dim Employee'[Employee Id] = VALUE("2400043")) || ('Dim Employee'[Employee Id] = VALUE("2400044")) || ('Dim Employee'[Employee Id] = VALUE("2400045")) || ('Dim Employee'[Employee Id] = VALUE("2400046")) || ('Dim Employee'[Employee Id] = VALUE("2400047")) || ('Dim Employee'[Employee Id] = VALUE("2400048")) || ('Dim Employee'[Employee Id] = VALUE("2400049")) || ('Dim Employee'[Employee Id] = VALUE("2400050"))), "Total Salary", [Total Salary])</CommandText>
+      <rd:DesignerState>
+        <QueryDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
+          <CommandType>DAX</CommandType>
+          <QuerySpecification xsi:type="MDXQuerySpecification">
+            <Select>
+              <Items>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Employee</DimensionName>
+                    <HierarchyName>Employee Id</HierarchyName>
+                    <HierarchyUniqueName>[Dim Employee].[Employee Id]</HierarchyUniqueName>
+                    <LevelName>Employee Id</LevelName>
+                    <UniqueName>[Dim Employee].[Employee Id].[Employee Id]</UniqueName>
+                  </ID>
+                  <ItemCaption>Employee Id</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Employee</DimensionName>
+                    <HierarchyName>Full Name</HierarchyName>
+                    <HierarchyUniqueName>[Dim Employee].[Full Name]</HierarchyUniqueName>
+                    <LevelName>Full Name</LevelName>
+                    <UniqueName>[Dim Employee].[Full Name].[Full Name]</UniqueName>
+                  </ID>
+                  <ItemCaption>Full Name</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Position</DimensionName>
+                    <HierarchyName>Position Id</HierarchyName>
+                    <HierarchyUniqueName>[Dim Position].[Position Id]</HierarchyUniqueName>
+                    <LevelName>Position Id</LevelName>
+                    <UniqueName>[Dim Position].[Position Id].[Position Id]</UniqueName>
+                  </ID>
+                  <ItemCaption>Position Id</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Position</DimensionName>
+                    <HierarchyName>Name</HierarchyName>
+                    <HierarchyUniqueName>[Dim Position].[Name]</HierarchyUniqueName>
+                    <LevelName>Name</LevelName>
+                    <UniqueName>[Dim Position].[Name].[Name]</UniqueName>
+                  </ID>
+                  <ItemCaption>Name</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Measure">
+                    <MeasureName>Total Salary</MeasureName>
+                    <UniqueName>[Measures].[Total Salary]</UniqueName>
+                  </ID>
+                  <ItemCaption>Total Salary</ItemCaption>
+                  <BackColor>true</BackColor>
+                  <ForeColor>true</ForeColor>
+                  <FontFamily>true</FontFamily>
+                  <FontSize>true</FontSize>
+                  <FontWeight>true</FontWeight>
+                  <FontStyle>true</FontStyle>
+                  <FontDecoration>true</FontDecoration>
+                  <FormattedValue>true</FormattedValue>
+                  <FormatString>true</FormatString>
+                </Item>
+              </Items>
+            </Select>
+            <AutoExecute>false</AutoExecute>
+            <From>Accounting DW</From>
+            <Filter>
+              <FilterItems>
+                <FilterItem>
+                  <HierarchyUniqueName>[Dim Employee].[Employee Id]</HierarchyUniqueName>
+                  <Condition xsi:type="EqualTo">
+                    <Members>
+                      <Member>
+                        <MemberUniqueName>[Dim Employee].[Employee Id].&amp;[2400003]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Employee].[Employee Id].&amp;[2400004]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Employee].[Employee Id].&amp;[2400005]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Employee].[Employee Id].&amp;[2400006]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Employee].[Employee Id].&amp;[2400007]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Employee].[Employee Id].&amp;[2400008]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Employee].[Employee Id].&amp;[2400009]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Employee].[Employee Id].&amp;[2400010]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Employee].[Employee Id].&amp;[2400011]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Employee].[Employee Id].&amp;[2400012]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Employee].[Employee Id].&amp;[2400001]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Employee].[Employee Id].&amp;[2400002]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Employee].[Employee Id].&amp;[2400013]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Employee].[Employee Id].&amp;[2400014]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Employee].[Employee Id].&amp;[2400015]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Employee].[Employee Id].&amp;[2400016]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Employee].[Employee Id].&amp;[2400017]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Employee].[Employee Id].&amp;[2400018]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Employee].[Employee Id].&amp;[2400019]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Employee].[Employee Id].&amp;[2400020]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Employee].[Employee Id].&amp;[2400021]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Employee].[Employee Id].&amp;[2400022]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Employee].[Employee Id].&amp;[2400023]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Employee].[Employee Id].&amp;[2400024]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Employee].[Employee Id].&amp;[2400025]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Employee].[Employee Id].&amp;[2400026]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Employee].[Employee Id].&amp;[2400027]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Employee].[Employee Id].&amp;[2400028]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Employee].[Employee Id].&amp;[2400029]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Employee].[Employee Id].&amp;[2400030]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Employee].[Employee Id].&amp;[2400031]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Employee].[Employee Id].&amp;[2400032]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Employee].[Employee Id].&amp;[2400033]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Employee].[Employee Id].&amp;[2400034]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Employee].[Employee Id].&amp;[2400035]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Employee].[Employee Id].&amp;[2400036]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Employee].[Employee Id].&amp;[2400037]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Employee].[Employee Id].&amp;[2400038]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Employee].[Employee Id].&amp;[2400039]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Employee].[Employee Id].&amp;[2400040]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Employee].[Employee Id].&amp;[2400041]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Employee].[Employee Id].&amp;[2400042]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Employee].[Employee Id].&amp;[2400043]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Employee].[Employee Id].&amp;[2400044]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Employee].[Employee Id].&amp;[2400045]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Employee].[Employee Id].&amp;[2400046]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Employee].[Employee Id].&amp;[2400047]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Employee].[Employee Id].&amp;[2400048]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Employee].[Employee Id].&amp;[2400049]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Employee].[Employee Id].&amp;[2400050]</MemberUniqueName>
+                      </Member>
+                    </Members>
+                  </Condition>
+                </FilterItem>
+              </FilterItems>
+            </Filter>
+            <Calculations />
+            <Aggregates />
+            <QueryProperties>
+              <IncludeMemberValue>true</IncludeMemberValue>
+            </QueryProperties>
+          </QuerySpecification>
+          <Query>
+            <Statement>EVALUATE SUMMARIZECOLUMNS('Dim Employee'[Employee Id], 'Dim Employee'[Full Name], 'Dim Position'[Position Id], 'Dim Position'[Name], FILTER(VALUES('Dim Employee'[Employee Id]), ('Dim Employee'[Employee Id] = VALUE("2400003")) || ('Dim Employee'[Employee Id] = VALUE("2400004")) || ('Dim Employee'[Employee Id] = VALUE("2400005")) || ('Dim Employee'[Employee Id] = VALUE("2400006")) || ('Dim Employee'[Employee Id] = VALUE("2400007")) || ('Dim Employee'[Employee Id] = VALUE("2400008")) || ('Dim Employee'[Employee Id] = VALUE("2400009")) || ('Dim Employee'[Employee Id] = VALUE("2400010")) || ('Dim Employee'[Employee Id] = VALUE("2400011")) || ('Dim Employee'[Employee Id] = VALUE("2400012")) || ('Dim Employee'[Employee Id] = VALUE("2400001")) || ('Dim Employee'[Employee Id] = VALUE("2400002")) || ('Dim Employee'[Employee Id] = VALUE("2400013")) || ('Dim Employee'[Employee Id] = VALUE("2400014")) || ('Dim Employee'[Employee Id] = VALUE("2400015")) || ('Dim Employee'[Employee Id] = VALUE("2400016")) || ('Dim Employee'[Employee Id] = VALUE("2400017")) || ('Dim Employee'[Employee Id] = VALUE("2400018")) || ('Dim Employee'[Employee Id] = VALUE("2400019")) || ('Dim Employee'[Employee Id] = VALUE("2400020")) || ('Dim Employee'[Employee Id] = VALUE("2400021")) || ('Dim Employee'[Employee Id] = VALUE("2400022")) || ('Dim Employee'[Employee Id] = VALUE("2400023")) || ('Dim Employee'[Employee Id] = VALUE("2400024")) || ('Dim Employee'[Employee Id] = VALUE("2400025")) || ('Dim Employee'[Employee Id] = VALUE("2400026")) || ('Dim Employee'[Employee Id] = VALUE("2400027")) || ('Dim Employee'[Employee Id] = VALUE("2400028")) || ('Dim Employee'[Employee Id] = VALUE("2400029")) || ('Dim Employee'[Employee Id] = VALUE("2400030")) || ('Dim Employee'[Employee Id] = VALUE("2400031")) || ('Dim Employee'[Employee Id] = VALUE("2400032")) || ('Dim Employee'[Employee Id] = VALUE("2400033")) || ('Dim Employee'[Employee Id] = VALUE("2400034")) || ('Dim Employee'[Employee Id] = VALUE("2400035")) || ('Dim Employee'[Employee Id] = VALUE("2400036")) || ('Dim Employee'[Employee Id] = VALUE("2400037")) || ('Dim Employee'[Employee Id] = VALUE("2400038")) || ('Dim Employee'[Employee Id] = VALUE("2400039")) || ('Dim Employee'[Employee Id] = VALUE("2400040")) || ('Dim Employee'[Employee Id] = VALUE("2400041")) || ('Dim Employee'[Employee Id] = VALUE("2400042")) || ('Dim Employee'[Employee Id] = VALUE("2400043")) || ('Dim Employee'[Employee Id] = VALUE("2400044")) || ('Dim Employee'[Employee Id] = VALUE("2400045")) || ('Dim Employee'[Employee Id] = VALUE("2400046")) || ('Dim Employee'[Employee Id] = VALUE("2400047")) || ('Dim Employee'[Employee Id] = VALUE("2400048")) || ('Dim Employee'[Employee Id] = VALUE("2400049")) || ('Dim Employee'[Employee Id] = VALUE("2400050"))), "Total Salary", [Total Salary])</Statement>
+            <ParameterDefinitions />
+          </Query>
+        </QueryDefinition>
+      </rd:DesignerState>
+    </Query>
+    <Fields>
+      <Field Name="Employee_Id">
+        <DataField>Dim Employee[Employee Id]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Full_Name">
+        <DataField>Dim Employee[Full Name]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Position_Id">
+        <DataField>Dim Position[Position Id]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Name">
+        <DataField>Dim Position[Name]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Total_Salary">
+        <DataField>[Total Salary]</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

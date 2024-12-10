@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet2">
+    <Query>
+      <DataSourceReference>DataSource1</DataSourceReference>
+      <CommandText>EVALUATE SUMMARIZECOLUMNS('Dim Department'[Department Id], 'Dim Department'[Abbreviation], 'Dim Department'[Name], 'Dim Department'[Manager Name], FILTER(VALUES('Dim Department'[Department Id]), 'Dim Department'[Department Id] &gt;= VALUE("200001") &amp;&amp; 'Dim Department'[Department Id] &lt;= VALUE("200600")), "Employee Id Distinct Count", [Employee Id Distinct Count])</CommandText>
+      <rd:DesignerState>
+        <QueryDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
+          <CommandType>DAX</CommandType>
+          <QuerySpecification xsi:type="MDXQuerySpecification">
+            <Select>
+              <Items>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Department</DimensionName>
+                    <HierarchyName>Department Id</HierarchyName>
+                    <HierarchyUniqueName>[Dim Department].[Department Id]</HierarchyUniqueName>
+                    <LevelName>Department Id</LevelName>
+                    <UniqueName>[Dim Department].[Department Id].[Department Id]</UniqueName>
+                  </ID>
+                  <ItemCaption>Department Id</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Department</DimensionName>
+                    <HierarchyName>Abbreviation</HierarchyName>
+                    <HierarchyUniqueName>[Dim Department].[Abbreviation]</HierarchyUniqueName>
+                    <LevelName>Abbreviation</LevelName>
+                    <UniqueName>[Dim Department].[Abbreviation].[Abbreviation]</UniqueName>
+                  </ID>
+                  <ItemCaption>Abbreviation</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Department</DimensionName>
+                    <HierarchyName>Name</HierarchyName>
+                    <HierarchyUniqueName>[Dim Department].[Name]</HierarchyUniqueName>
+                    <LevelName>Name</LevelName>
+                    <UniqueName>[Dim Department].[Name].[Name]</UniqueName>
+                  </ID>
+                  <ItemCaption>Name</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Department</DimensionName>
+                    <HierarchyName>Manager Name</HierarchyName>
+                    <HierarchyUniqueName>[Dim Department].[Manager Name]</HierarchyUniqueName>
+                    <LevelName>Manager Name</LevelName>
+                    <UniqueName>[Dim Department].[Manager Name].[Manager Name]</UniqueName>
+                  </ID>
+                  <ItemCaption>Manager Name</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Measure">
+                    <MeasureName>Employee Id Distinct Count</MeasureName>
+                    <UniqueName>[Measures].[Employee Id Distinct Count]</UniqueName>
+                  </ID>
+                  <ItemCaption>Employee Id Distinct Count</ItemCaption>
+                  <BackColor>true</BackColor>
+                  <ForeColor>true</ForeColor>
+                  <FontFamily>true</FontFamily>
+                  <FontSize>true</FontSize>
+                  <FontWeight>true</FontWeight>
+                  <FontStyle>true</FontStyle>
+                  <FontDecoration>true</FontDecoration>
+                  <FormattedValue>true</FormattedValue>
+                  <FormatString>true</FormatString>
+                </Item>
+              </Items>
+            </Select>
+            <AutoExecute>false</AutoExecute>
+            <From>Accounting DW</From>
+            <Filter>
+              <FilterItems>
+                <FilterItem>
+                  <HierarchyUniqueName>[Dim Department].[Department Id]</HierarchyUniqueName>
+                  <Condition xsi:type="Range">
+                    <Basis>Member</Basis>
+                    <From>[Dim Department].[Department Id].&amp;[200001]</From>
+                    <To>[Dim Department].[Department Id].&amp;[200600]</To>
+                  </Condition>
+                </FilterItem>
+              </FilterItems>
+            </Filter>
+            <Calculations />
+            <Aggregates />
+            <QueryProperties>
+              <IncludeMemberValue>true</IncludeMemberValue>
+            </QueryProperties>
+          </QuerySpecification>
+          <Query>
+            <Statement>EVALUATE SUMMARIZECOLUMNS('Dim Department'[Department Id], 'Dim Department'[Abbreviation], 'Dim Department'[Name], 'Dim Department'[Manager Name], FILTER(VALUES('Dim Department'[Department Id]), 'Dim Department'[Department Id] &gt;= VALUE("200001") &amp;&amp; 'Dim Department'[Department Id] &lt;= VALUE("200600")), "Employee Id Distinct Count", [Employee Id Distinct Count])</Statement>
+            <ParameterDefinitions />
+          </Query>
+        </QueryDefinition>
+      </rd:DesignerState>
+    </Query>
+    <Fields>
+      <Field Name="Department_Id">
+        <DataField>Dim Department[Department Id]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Abbreviation">
+        <DataField>Dim Department[Abbreviation]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Name">
+        <DataField>Dim Department[Name]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Manager_Name">
+        <DataField>Dim Department[Manager Name]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Employee_Id_Distinct_Count">
+        <DataField>[Employee Id Distinct Count]</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>
